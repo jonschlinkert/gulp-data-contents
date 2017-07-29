@@ -1,0 +1,60 @@
+{
+  "name": "gulp-data-contents",
+  "description": "Gulp plugin that replaces the contents of a file with the contents of another file using the filepath specified on the 'contents' property in front-matter. Customizable, useful for generating scaffolding or defining placeholder files.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/gulp-data-contents",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/gulp-data-contents",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/gulp-data-contents/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "file-is-binary": "^1.0.0",
+    "get-value": "^2.0.6",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "vinyl": "^2.1.0",
+    "gulp-format-md": "^1.0.0"
+  },
+  "keywords": [
+    "contents",
+    "data",
+    "gulp",
+    "gulpplugin"
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    },
+    "related": {
+      "list": []
+    },
+    "reflinks": [
+      "assemble",
+      "electron",
+      "gray-matter",
+      "metalsmith"
+    ]
+  }
+}
