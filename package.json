@@ -1,7 +1,7 @@
 {
   "name": "gulp-data-contents",
   "description": "Gulp plugin that replaces the contents of a file with the contents of another file using the filepath specified on the 'contents' property in front-matter. Customizable, useful for generating scaffolding or defining placeholder files.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/gulp-data-contents",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/gulp-data-contents",
