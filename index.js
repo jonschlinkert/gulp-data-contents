@@ -2,6 +2,7 @@
 
 var fs = require('fs');
 var path = require('path');
+var expand = require('expand-tilde');
 var isBinary = require('file-is-binary');
 var through = require('through2');
 var get = require('get-value');
@@ -40,5 +41,7 @@ module.exports = function(options) {
 };
 
 function resolve(file, options, next) {
-  next(null, path.resolve(options.cwd || file.base, get(file, options.prop)));
+  var filename = get(file, options.prop);
+  var cwd = expand(options.cwd || file.base);
+  next(null, path.resolve(cwd, filename));
 }
